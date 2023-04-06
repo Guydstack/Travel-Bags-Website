@@ -1,0 +1,499 @@
+/* Import */
+@import url(keyframe.css);
+
+@media only screen and (max-width: 600px) {
+    #user{ display: none;}
+    .icon{ display: none;} 
+    .bags{ margin-right:0; ;}
+    .box_2 p{ position: relative; left: 10%;}
+    .cover-parallax {display: none;}
+    .cover-parallax_2{display: none;}
+    
+}
+
+@media only screen and (min-width: 600px){
+    .cover{display: none;}
+    .about_us{display: none;}
+}
+
+
+    @media only screen and (min-width: 960px) {
+    .navbar-nav{margin-right: 200px !important;}
+    }
+
+/* HTML Style */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Body Style */
+body {direction: rtl;}
+
+/* Nav */
+
+nav{
+    z-index: 999;
+}
+
+.navbar{
+    font-size: 2em;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-nav{
+   text-align: center;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin-right: 40px;
+    height: 50px;
+    width: 100px;
+}
+
+
+.nav {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.nav h2 {
+    display: inline-block; 
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.menue {
+    width: 40%;
+    margin-right: 220px;
+}
+
+/* #logo{
+    position: absolute;
+    top: -29px;
+    right: 30px;     
+} */
+
+.icon {
+
+    position: absolute;
+    top: 25px;
+    left: 73px;
+}
+
+.icon i {
+
+    padding-left: 0;
+    font-size: 1em ;
+}
+
+.icon span {
+
+    padding-left: 0;
+    font-size: 1em ;
+}
+
+#shopping_cart {
+
+    transform:rotatey(180deg);
+    transition: color 2s ;
+}
+
+#shopping_cart:hover{
+    color: green;
+}
+
+#buy_amount{
+    position: absolute;
+    top: 3px;
+    right: 6.6px;
+    font-size: 0.8em ;
+    color: white;
+}
+
+#user{
+
+    position: absolute;
+    bottom:30px;
+    left: 80px;   
+}
+
+
+/* Hader Img */
+
+.cover-parallax{
+    background-image: url(Images/cover1.png);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover {
+height: 200px;
+width: 100%;
+overflow-y: hidden;
+}
+
+.cover img {
+   width: 100%;
+   height: auto;   
+}
+
+/* Scroll Up */
+#scroll_up{
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    font-size: 6em;
+}
+
+#scroll_up a {
+    color: cadetblue;
+    opacity: 70%;
+    border: none;
+    transition: 2s;
+}
+
+#scroll_up a:hover{
+opacity: 30%;
+}
+
+/* Container Bags */
+.bags {   
+background-color: white;
+height: auto;
+width: 100%;    
+}
+
+#all_product{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+.bags img {
+    width: 70px;
+    height: auto;
+}
+
+.bags h1{
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.bags p {
+font-weight: 700;
+padding: 0;
+margin-left: 80px;
+}
+
+.bags span {
+    margin-right: 20px;
+}
+
+#product_1{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    transition: opacity 2s;
+    transition: scale 2s;
+}
+
+#product_1:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+#product_1 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+#product_2{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    transition: opacity 2s;
+    transition: scale 2s;   
+}
+
+#product_2:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+#product_2 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+#star_icon{
+color: green;
+margin-right: 2px;
+font-size: 1.5em;
+}
+
+#cart_icon{
+color:cadetblue;
+transform: rotateY(180deg);
+margin-right: 15px;
+font-size: 1.5em;
+}
+
+#product_2_icon{
+    margin-top: -4px;
+}
+
+#product_3{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    transition: opacity 2s;
+    transition: scale 2s;
+}
+
+#product_3:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+#product_3 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+#product_4{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    transition: opacity 2s;
+    transition: scale 2s;
+}
+
+#product_4:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+#product_4 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+#product_5{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    transition: opacity 2s;
+    transition: scale 2s; 
+}
+
+#product_5:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+#product_5 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+#product_6{
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    /* float: right; */
+    opacity: 1;
+    transition: opacity 2s;
+    transition: scale 2s;
+}
+
+#product_6:hover{
+    opacity: 0.7;
+    scale: 89%;
+}
+
+
+#product_6 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+#button {
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-name: flash;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Container Our Product */
+
+.our-product{
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.our-product img{
+    margin-top: -20%;
+    width: 100%;
+    height: auto;   
+}
+
+.box_2 {
+    height: auto;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+#box_2_h1{
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+
+#chevron_icon_right{
+   position: relative;
+   right: 20px;
+   padding-bottom: 20px;
+   font-size: 8em;
+   color: cadetblue;
+   float: right;
+   transition: color 2s,scale 2s;
+}
+
+#chevron_icon_right:hover{
+    color: black;
+    scale: 90%;
+ }
+
+
+#chevron_icon_left{
+    position: absolute;
+    left: 50px;
+    padding-bottom: 20px;
+    font-size: 8em;
+    color: cadetblue;
+    float: right;
+    transition: color 2s,scale 2s; 
+ }
+
+ #chevron_icon_left:hover{
+    color: black;
+    scale: 90%;
+ }
+
+ .box_2 img{ 
+    position: absolute;
+    right: 100px;
+    margin-top: 20px;
+    z-index: -2; 
+    float: right;
+    padding-left: 20px;
+    height: auto;
+    width: 70px;
+    }
+
+.box_2 p{  
+    padding-top: 15px;
+    padding-right: 200px;
+    padding-left: 40px;
+    z-index: -997;
+    }
+
+/* Container About Us */
+
+ .about_us{
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+ }
+
+ .about_us img{
+    width: 100%;
+    height: auto;  
+ }
+
+ .cover-parallax_2{
+    background-image: url(Images/parallax2.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .box-3{
+    width: 100%;
+    height: auto;
+ }
+
+ #box_3_h1{
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+#box_3_h4{
+    width: 100px;
+    height: 100px;
+    float:right;
+    margin-right: 20px;
+  
+}
+
+#box_3_p{
+    width: 58%;
+    height: auto;
+    padding-bottom: 50px;
+    float: right;
+    margin-right: 5%; 
+}
+
+/* Footer */
+
+footer{
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    bottom:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: cadetblue;
+}
+
+footer h4{
+    position: absolute;
+    top: 12px;
+    right: 45%;
+}
+
+
+
+
+
+
